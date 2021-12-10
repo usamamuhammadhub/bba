@@ -38,5 +38,5 @@ def send_mail1(request):
        
         
 
-    return redirect('home')
+    return render('home')
           
