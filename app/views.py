@@ -5,7 +5,6 @@
 
 
 
-from django.contrib.messages import constants as messages
 
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import redirect, render
@@ -13,8 +12,8 @@ from django.http import HttpResponse
 from django.conf import settings
 from django.core.mail import send_mail, send_mass_mail
 from django.shortcuts import render
-from django.contrib import messages
-from django.views.decorators.csrf import csrf_protect
+
+
 
 def home(request):
  return render(request, 'app/home.html')
@@ -22,7 +21,6 @@ def home(request):
 
 
 
-@csrf_protect
 def send_mail1(request):
     if request.method=="POST":
         name =request.POST.get('name')
@@ -38,5 +36,5 @@ def send_mail1(request):
        
         
 
-    return render('home')
+    return render(request,'app/home.html')
           
