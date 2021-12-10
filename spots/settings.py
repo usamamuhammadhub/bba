@@ -23,7 +23,7 @@ import os
 SECRET_KEY = os.environ['SEC_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["decentstarsports.herokuapp.com","localhost"]
 
