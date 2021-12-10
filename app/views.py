@@ -37,5 +37,8 @@ def send_mail1(request):
         
 
         return render(request, 'app/home.html')
+    else:
+        
+       return render(request,'app/home.html') 
     
           
