@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['SEC_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = ["decentstarsports.herokuapp.com","localhost"]
-CSRF_TRUSTED_ORIGINS = ['front.bluemix.net']
+CSRF_TRUSTED_ORIGINS = ['decentstarsports.herokuapp.com']
 
 
 # Application definition
