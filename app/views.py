@@ -36,5 +36,6 @@ def send_mail1(request):
        
         
 
-    return render(request,'app/home.html')
+        return render(request, 'app/home.html')
+    
           
